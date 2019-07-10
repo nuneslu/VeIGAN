@@ -26,5 +26,3 @@ python3 test.py --image 'input_image' --mask 'removed_area_mask' --output 'outpu
 ## Disparity Inpainting Examples
 
 Object removal and 3D mesh reconstruction for comparison:
-
-
