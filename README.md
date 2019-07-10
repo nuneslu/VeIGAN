@@ -22,7 +22,3 @@ For testing use:
 ```
 python3 test.py --image 'input_image' --mask 'removed_area_mask' --output 'output_image' --checkpoint_dir model_logs/'trained_model_dir'
 ```
-
-## Disparity Inpainting Examples
-
-Object removal and 3D mesh reconstruction for comparison:
