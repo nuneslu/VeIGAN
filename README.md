@@ -31,3 +31,15 @@ For the paper all the train and test were made in a GeForce GTX 1080ti.
 Depth map object removal example and the respective 3D mesh reconstruction:
 
 ![Disparity Inpainting](https://github.com/nuneslu/VeIGAN/blob/master/examples/example.png)
+
+## License
+
+CC 4.0 Attribution-NonCommercial International
+
+The software is for educaitonal and academic research purpose only.
+
+## Citations
+
+Please cite this work as follow:
+
+{}
