@@ -22,3 +22,9 @@ For testing use:
 ```
 python3 test.py --image 'input_image' --mask 'removed_area_mask' --output 'output_image' --checkpoint_dir model_logs/'trained_model_dir'
 ```
+
+## VeIGAN Examples
+
+Depth map object removal example and the respective 3D mesh reconstruction:
+
+![Disparity Inpainting](https://github.com/nuneslu/VeIGAN/blob/master/example.png)
