@@ -1,7 +1,5 @@
 # VeIGAN: Vectorial Inpainting Generative Adversarial Networks for Depth Maps Object Removal
 
-
-Car removal from disparity scene:
 ![VeIGAN GIF](https://github.com/nuneslu/VeIGAN/blob/master/IVGif.gif)
 
 ## About
