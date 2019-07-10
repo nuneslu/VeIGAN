@@ -5,7 +5,7 @@
 ## About
 This code is based on the Generative Inpainting [CVPR 2018](https://arxiv.org/abs/1801.07892) paper and it's [repository](https://github.com/JiahuiYu/generative_inpainting).
 
-Based on the Generative Inpainting network we proposed adaptations to deal with disparity images inpainting. Our results have been publish on the [IV 2019](https://iv2019.org/) and on this repository we have the code used on this publication.
+Based on the Generative Inpainting network we proposed adaptations to deal with disparity images inpainting. Our results have been publish on [IV 2019](https://iv2019.org/) and on this repository we have the code used on this publication.
 
 ## Installation
 
