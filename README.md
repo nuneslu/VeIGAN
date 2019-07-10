@@ -1,6 +1,6 @@
 # VeIGAN: Vectorial Inpainting Generative Adversarial Networks for Depth Maps Object Removal
 
-![VeIGAN GIF](https://github.com/nuneslu/VeIGAN/blob/master/IVGif.gif)
+![VeIGAN GIF](https://github.com/nuneslu/VeIGAN/blob/master/examples/IVGif.gif)
 
 ## About
 This code is based on the Generative Inpainting [CVPR 2018](https://arxiv.org/abs/1801.07892) paper and it's [repository](https://github.com/JiahuiYu/generative_inpainting).
@@ -24,9 +24,10 @@ For testing use:
 ```
 python3 test.py --image 'input_image' --mask 'removed_area_mask' --output 'output_image' --checkpoint_dir model_logs/'trained_model_dir'
 ```
+For the paper all the train and test were made in a GeForce GTX 1080ti.
 
 ## VeIGAN Examples
 
 Depth map object removal example and the respective 3D mesh reconstruction:
 
-![Disparity Inpainting](https://github.com/nuneslu/VeIGAN/blob/master/example.png)
+![Disparity Inpainting](https://github.com/nuneslu/VeIGAN/blob/master/examples/example.png)
