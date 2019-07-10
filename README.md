@@ -1,5 +1,9 @@
 # VeIGAN: Vectorial Inpainting Generative Adversarial Networks for Depth Maps Object Removal
 
+
+Car removal from disparity scene:
+![VeIGAN GIF](https://github.com/nuneslu/VeIGAN/blob/master/IVGif.gif)
+
 ## About
 This code is based on the Generative Inpainting [CVPR 2018](https://arxiv.org/abs/1801.07892) paper and it's [repository](https://github.com/JiahuiYu/generative_inpainting).
 
