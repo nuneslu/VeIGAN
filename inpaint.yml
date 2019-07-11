@@ -30,25 +30,9 @@ VAL_PSTEPS: 1000
 
 # data
 DATA_FLIST:
-  # https://github.com/JiahuiYu/progressive_growing_of_gans_tf
-  celebahq: [
-    './ddata_flist/train_depth_shuffled.flist',
-    './ddata_flist/validation_depth_shuffled.flist'
-  ]
-  # http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html, please to use RANDOM_CROP: True
-  celeba: [
-    './../data_flist/train_shuffled.flist',
-    './../data_flist/validation_static_view.flist'
-  ]
-  # http://places2.csail.mit.edu/, please download the high-resolution dataset and use RANDOM_CROP: True
-  places2: [
-    './../data_flist/train_shuffled.flist',
-    './../data_flist/validation_static_view.flist'
-  ]
-  # http://www.image-net.org/, please use RANDOM_CROP: True
-  imagenet: [
-    './../data_flist/train_shuffled.flist',
-    './../data_flist/validation_static_view.flist',
+  veigan: [
+    './data_flist/train_depth_shuffled.flist',
+    './data_flist/validation_depth_shuffled.flist'
   ]
 
 STATIC_VIEW_SIZE: 30
