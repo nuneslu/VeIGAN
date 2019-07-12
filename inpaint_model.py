@@ -26,36 +26,6 @@ from inpaint_ops import resize_mask_like, contextual_attention, surface_attentio
 
 logger = logging.getLogger()
 
-def sparse_conv(x, binary_mask=None, filters=32, kernel_size=3, strides=2, scale_l2=0.0, name=None):
-        if binary_mask == None:
-            b,h,w,c = x.get_shape()
-            channels = tf.split(x, c, axis=3)
-            binary_mask = tf.where(tf.equal(channels[0], 0), tf.zeros_like(channels[0]), tf.ones_like(channels[0]))
-
-        features = tf.multiply(x, binary_mask)
-        features = tf.layers.conv2d(features, filters=filters, kernel_size=kernel_size, strides=(strides,strides), trainable=True, use_bias=False, padding="same",
-					kernel_regularizer=tf.contrib.layers.l2_regularizer(scale=scale_l2), name=name)
-
-        norm = tf.layers.conv2d(binary_mask, filters=filters, kernel_size=kernel_size, strides=(strides, strides), kernel_initializer=tf.ones_initializer(),
-					trainable=False, use_bias=False, padding="same")
-        norm = tf.where(tf.equal(norm, 0), tf.zeros_like(norm), tf.reciprocal(norm))
-
-        _,_,_,bias_size = norm.get_shape()
-
-        b = tf.Variable(tf.constant(0.0, shape=[bias_size]), trainable=True)
-        feature = tf.multiply(features, norm) + b
-        mask = tf.layers.max_pooling2d(binary_mask, strides=strides, pool_size=3, padding="same")
-
-        return feature, mask
-
-def contrast_conv(x, contrast_factor, kernel_size=5, strides=1, name=None):
-        features = tf.layers.conv2d(x, filters=3, kernel_size=kernel_size, strides=(strides, strides), trainable=True, use_bias=False, padding="same", name=name)
-        mean_features = tf.scalar_mul(1/(kernel_size * kernel_size), features)
-
-        x = tf.scalar_mul(contrast_factor, (x - mean_features)) + mean_features
-
-        return x
-
 def surf_conv(depth):
 	kernel_x = np.zeros((3,3,1,1))
 	kernel_y = np.zeros((3,3,1,1))
@@ -182,7 +152,7 @@ class InpaintCAModel(Model):
             x = gen_conv(x, 4*cnum, 3, rate=16, name='xconv10_atrous')
             x_hallu = x
             # attention branch
-            x = gen_conv(xnow, cnum, 5, 1, name='pmconv1')
+            x = gen_conv(xnow_surf, cnum, 5, 1, name='pmconv1')
             #x, _ = sparse_conv(x, filters=cnum, kernel_size=5, binary_mask=None, strides=1, name='sparse_pmconv1')
             x = gen_conv(x, cnum, 3, 2, name='pmconv2_downsample')
             x = gen_conv(x, 2*cnum, 3, 1, name='pmconv3')
