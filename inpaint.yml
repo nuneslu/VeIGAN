@@ -12,6 +12,7 @@ WGAN_GP_LAMBDA: 10
 COARSE_L1_ALPHA: 1.2
 L1_LOSS_ALPHA: 1.2
 AE_LOSS_ALPHA: 1.2
+V_LOSS_ALPHA: 0.8
 GAN_WITH_MASK: False
 DISCOUNTED_MASK: True
 RANDOM_SEED: False
@@ -21,7 +22,7 @@ PADDING: 'SAME'
 NUM_GPUS: 1
 GPU_ID: 0  # -1 indicate select any available one, otherwise select gpu ID, e.g. [0,1,3]
 TRAIN_SPE: 1000
-MAX_ITERS: 30000
+MAX_ITERS: 60000
 VIZ_MAX_OUT: 10
 GRADS_SUMMARY: False
 GRADIENT_CLIP: False
@@ -31,8 +32,8 @@ VAL_PSTEPS: 1000
 # data
 DATA_FLIST:
   veigan: [
-    './data_flist/train_depth_shuffled.flist',
-    './data_flist/validation_depth_shuffled.flist'
+    '/home/lrm/CaRINA/Inpainting/ddata_flist3/train_cs_shuffled.flist',
+    '/home/lrm/CaRINA/Inpainting/ddata_flist3/validation_cs_shuffled.flist'
   ]
 
 STATIC_VIEW_SIZE: 30
