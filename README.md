@@ -44,8 +44,8 @@ The software is for educaitonal and academic research purpose only.
 
 Please cite this work as follow:
 
-@INPROCEEDINGS{8814157,
-author={L. P. N. {Matias} and M. {Sons} and J. R. {Souza} and D. F. {Wolf} and C. {Stiller}},
+@INPROCEEDINGS{8814157,\n
+author={L. P. N. {Matias} and M. {Sons} and J. R. {Souza} and D. F. {Wolf} and C. {Stiller}},\n
 booktitle={2019 IEEE Intelligent Vehicles Symposium (IV)},
 title={VeIGAN: Vectorial Inpainting Generative Adversarial Network for Depth Maps Object Removal},
 year={2019},
