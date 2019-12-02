@@ -32,10 +32,12 @@ For the paper all the train and test were made in a GeForce GTX 1080ti.
 
 Depth map object removal example and the respective 3D mesh reconstruction:
 
-Object Removal from KITTI Images  
+Object Removal from KITTI Images:
+
 ![KITTI Disparity Inpainting](https://github.com/nuneslu/VeIGAN/blob/master/examples/example.png)
 
-Object Removal from CityScapes Images
+Object Removal from CityScapes Images:
+
 ![CityScapes Disparity Inpainting](https://github.com/nuneslu/VeIGAN/blob/master/examples/spoiler_result.png)
 
 
