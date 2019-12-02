@@ -11,7 +11,7 @@ Based on the Generative Inpainting network we proposed adaptations to deal with 
 
 ## Installation
 
-To use this code, please follow the installation instructions from the original repository since the dependencies are the same.
+To use this code, please follow the installation instructions from the original [repository](https://github.com/JiahuiYu/generative_inpainting) since the dependencies are the same.
 
 ## Usage
 
