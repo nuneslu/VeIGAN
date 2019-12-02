@@ -246,7 +246,6 @@ class InpaintCAModel(Model):
         # global surface patch
         surf_pos = surf_conv((tf.image.rgb_to_grayscale(batch_pos) + 1.) * 127.5)
         surf_neg = surf_conv((tf.image.rgb_to_grayscale(batch_complete) + 1.) * 127.5)
-        surf_batch_pos_neg = tf.concat([surf_pos, surf_neg], axis=0)
         batch_pos = tf.concat([batch_pos, surf_pos], axis=-1)
         batch_complete = tf.concat([batch_complete, surf_neg], axis=-1)
         # gan
@@ -255,7 +254,6 @@ class InpaintCAModel(Model):
         # local surface patch
         local_surf_pos = surf_conv((tf.image.rgb_to_grayscale(local_patch_batch_pos) + 1.) * 127.5)
         local_surf_neg = surf_conv((tf.image.rgb_to_grayscale(local_patch_batch_complete) + 1.) * 127.5)
-        surf_batch_pos_neg = tf.concat([surf_pos, surf_neg], axis=0)
         local_patch_batch_pos = tf.concat([local_patch_batch_pos, local_surf_pos], axis=-1)
         local_patch_batch_complete = tf.concat([local_patch_batch_complete, local_surf_neg], axis=-1)
         # local deterministic patch
