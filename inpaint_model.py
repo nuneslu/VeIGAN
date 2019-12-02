@@ -313,8 +313,10 @@ class InpaintCAModel(Model):
             gradients_summary(losses['l1_loss'], x2, name='l1_loss_to_x2')
             gradients_summary(losses['ae_loss'], x1, name='ae_loss_to_x1')
             gradients_summary(losses['ae_loss'], x2, name='ae_loss_to_x2')
+            #################################V_LOSS GRADIENTS###########################################
             gradients_summary(losses['v_loss'], batch_coarse, name='v_loss_to_x1')
             gradients_summary(losses['v_loss'], batch_out, name='v_loss_to_x2')
+            ############################################################################################
         if config.PRETRAIN_COARSE_NETWORK:
             losses['g_loss'] = 0
         else:
