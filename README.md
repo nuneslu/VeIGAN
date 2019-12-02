@@ -5,7 +5,7 @@
 ## About
 This code is based on the Generative Inpainting [CVPR 2018](https://arxiv.org/abs/1801.07892) paper and it's [repository](https://github.com/JiahuiYu/generative_inpainting).
 
-Based on the Generative Inpainting network we proposed adaptations to deal with disparity images inpainting. Our results have been publish on [IV 2019](https://iv2019.org/) and on this repository we have the code used on this publication.
+Based on the Generative Inpainting network we proposed adaptations to deal with disparity images inpainting. Our results have been publish on [IV 2019](https://ieeexplore.ieee.org/document/8814157) and on this repository we have the code used on this publication.
 
 ## Installation
 
@@ -31,6 +31,8 @@ For the paper all the train and test were made in a GeForce GTX 1080ti.
 Depth map object removal example and the respective 3D mesh reconstruction:
 
 ![Disparity Inpainting](https://github.com/nuneslu/VeIGAN/blob/master/examples/example.png)
+![CityScapes Disparity Inpainting](https://github.com/nuneslu/VeIGAN/blob/master/examples/spoiler_result.png)
+
 
 ## License
 
@@ -42,4 +44,15 @@ The software is for educaitonal and academic research purpose only.
 
 Please cite this work as follow:
 
-{}
+@INPROCEEDINGS{8814157,
+author={L. P. N. {Matias} and M. {Sons} and J. R. {Souza} and D. F. {Wolf} and C. {Stiller}},
+booktitle={2019 IEEE Intelligent Vehicles Symposium (IV)},
+title={VeIGAN: Vectorial Inpainting Generative Adversarial Network for Depth Maps Object Removal},
+year={2019},
+volume={},
+number={},
+pages={310-316},
+keywords={feature extraction;image colour analysis;neural net architecture;object detection;stereo image processing;depth features;network architecture;depth distribution;depth information;masked area;disparity image;image-based depth estimation;stereo cameras;object occlusion;RGB images;depth feature extraction;inpainting approaches;scene perspectives;vectorial inpainting generative adversarial network;depth map object removal},
+doi={10.1109/IVS.2019.8814157},
+ISSN={1931-0587},
+month={June},}
