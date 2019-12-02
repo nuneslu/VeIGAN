@@ -46,13 +46,23 @@ Please cite this work as follow:
 
 @INPROCEEDINGS{8814157,
 author={L. P. N. {Matias} and M. {Sons} and J. R. {Souza} and D. F. {Wolf} and C. {Stiller}},
+
 booktitle={2019 IEEE Intelligent Vehicles Symposium (IV)},
+
 title={VeIGAN: Vectorial Inpainting Generative Adversarial Network for Depth Maps Object Removal},
+
 year={2019},
+
 volume={},
+
 number={},
+
 pages={310-316},
+
 keywords={feature extraction;image colour analysis;neural net architecture;object detection;stereo image processing;depth features;network architecture;depth distribution;depth information;masked area;disparity image;image-based depth estimation;stereo cameras;object occlusion;RGB images;depth feature extraction;inpainting approaches;scene perspectives;vectorial inpainting generative adversarial network;depth map object removal},
+
 doi={10.1109/IVS.2019.8814157},
+
 ISSN={1931-0587},
+
 month={June},}
