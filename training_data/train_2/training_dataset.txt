@@ -1,0 +1,6 @@
+This training dataset is just for simpler tests. The images are from the KITTI dataset stereo pair images,
+disparity calculated with Efficient Large-Scale Stereo Matching Algorithm (https://link.springer.com/chapter/10.1007/978-3-642-19315-6_3)
+
+In the video demo we have used the CityScapes dataset depth maps, which are denser and have more frames.
+
+For more info, please see: https://arxiv.org/abs/1912.03992
