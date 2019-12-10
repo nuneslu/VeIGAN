@@ -2,7 +2,7 @@
 
 ![VeIGAN GIF](https://github.com/nuneslu/VeIGAN/blob/master/examples/IVGif.gif)  
 
-A video of our results can be seen in ![CityScapes Reconstruction](https://www.youtube.com/watch?v=0fQ3vPD88-w&feature=youtu.be)
+A video of our results can be seen in ![CityScapes Reconstruction](https://www.youtube.com/watch?v=0fQ3vPD88-w)
 
 ## About
 This code is based on the Generative Inpainting [[1](https://arxiv.org/abs/1801.07892)][[2](https://arxiv.org/abs/1806.03589)] papers and it's [repository](https://github.com/JiahuiYu/generative_inpainting).
