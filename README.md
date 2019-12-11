@@ -63,10 +63,10 @@ Please cite this work as:
 }
 
 @MISC{matias2019environment,
-    title={Environment reconstruction on depth images using Generative Adversarial Networks}, 
-    author={Lucas P. N. Matias and Jefferson R. Souza and Denis F. Wolf}, 
-    year={2019}, 
-    eprint={1912.03992}, 
-    archivePrefix={arXiv}, 
-    primaryClass={cs.CV} 
+    title={Environment reconstruction on depth images using Generative Adversarial Networks},  
+    author={Lucas P. N. Matias and Jefferson R. Souza and Denis F. Wolf},  
+    year={2019},  
+    eprint={1912.03992},  
+    archivePrefix={arXiv},  
+    primaryClass={cs.CV}  
 }
