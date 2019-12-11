@@ -52,12 +52,21 @@ The software is for educational and academic research purpose only.
 Please cite this work as:
 
 @INPROCEEDINGS{8814157,  
- author={L. P. N. {Matias} and M. {Sons} and J. R. {Souza} and D. F. {Wolf} and C. {Stiller}},  
- booktitle={2019 IEEE Intelligent Vehicles Symposium (IV)},  
- title={VeIGAN: Vectorial Inpainting Generative Adversarial Network for Depth Maps Object Removal},  
- year={2019},    
- pages={310-316},  
- doi={10.1109/IVS.2019.8814157},  
- ISSN={1931-0587},  
- month={June},  
+    author={L. P. N. {Matias} and M. {Sons} and J. R. {Souza} and D. F. {Wolf} and C. {Stiller}},  
+    booktitle={2019 IEEE Intelligent Vehicles Symposium (IV)},  
+    title={VeIGAN: Vectorial Inpainting Generative Adversarial Network for Depth Maps Object Removal},  
+    year={2019},    
+    pages={310-316},  
+    doi={10.1109/IVS.2019.8814157},  
+    ISSN={1931-0587},  
+    month={June},  
+}
+
+@MISC{matias2019environment,
+    title={Environment reconstruction on depth images using Generative Adversarial Networks},
+    author={Lucas P. N. Matias and Jefferson R. Souza and Denis F. Wolf},
+    year={2019},
+    eprint={1912.03992},
+    archivePrefix={arXiv},
+    primaryClass={cs.CV}
 }
